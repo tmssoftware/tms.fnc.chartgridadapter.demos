@@ -1,0 +1,344 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Chart Grid Adapter Demo'
+  ClientHeight = 428
+  ClientWidth = 898
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Client
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Margins.Bottom = 20.000000000000000000
+    Size.Width = 858.000000000000000000
+    Size.Height = 388.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object GridPanel: TPanel
+      Align = Right
+      Position.X = 544.000000000000000000
+      Size.Width = 314.000000000000000000
+      Size.Height = 388.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object TMSFNCGrid1: TTMSFNCGrid
+        Align = Top
+        Size.Width = 314.000000000000000000
+        Size.Height = 340.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ColumnCount = 4
+        RowCount = 15
+        Options.Editing.CalcFormat = '%g'
+        Options.Grouping.CalcFormat = '%g'
+        Options.Grouping.GroupCountFormat = '(%d)'
+        Options.IO.XMLEncoding = 'ISO-8859-1'
+        Options.Mouse.ClickMargin = 0
+        Options.Mouse.ColumnSizeMargin = 6
+        Options.Mouse.RowSizeMargin = 6
+        Columns = <
+          item
+            BorderWidth = 1
+            FixedFont.Name = 'Segoe UI'
+            FixedFont.StyleExt = {00070000000000000004000000}
+            Font.Name = 'Segoe UI'
+            ID = ''
+            Width = 68.000000000000000000
+          end
+          item
+            BorderWidth = 1
+            FixedFont.Name = 'Segoe UI'
+            FixedFont.StyleExt = {00070000000000000004000000}
+            Font.Name = 'Segoe UI'
+            ID = ''
+            Width = 68.000000000000000000
+          end
+          item
+            BorderWidth = 1
+            FixedFont.Name = 'Segoe UI'
+            FixedFont.StyleExt = {00070000000000000004000000}
+            Font.Name = 'Segoe UI'
+            ID = ''
+            Width = 68.000000000000000000
+          end
+          item
+            BorderWidth = 1
+            FixedFont.Name = 'Segoe UI'
+            FixedFont.StyleExt = {00070000000000000004000000}
+            Font.Name = 'Segoe UI'
+            ID = ''
+            Width = 68.000000000000000000
+          end>
+        DefaultFont.Name = 'Segoe UI'
+        TopRow = 1
+        Appearance.FixedLayout.Fill.Color = xFFE6E6E6
+        Appearance.FixedLayout.Font.Name = 'Segoe UI'
+        Appearance.FixedLayout.Font.StyleExt = {00070000000000000004000000}
+        Appearance.NormalLayout.Fill.Color = claNull
+        Appearance.NormalLayout.Font.Name = 'Segoe UI'
+        Appearance.GroupLayout.Fill.Color = xFF6E93C3
+        Appearance.GroupLayout.Font.Color = claWhite
+        Appearance.GroupLayout.Font.Name = 'Segoe UI'
+        Appearance.SummaryLayout.Fill.Color = xFFB9C5D5
+        Appearance.SummaryLayout.Font.Name = 'Segoe UI'
+        Appearance.SelectedLayout.Fill.Color = claLightsteelblue
+        Appearance.SelectedLayout.Font.Color = claWhite
+        Appearance.SelectedLayout.Font.Name = 'Segoe UI'
+        Appearance.FocusedLayout.Fill.Color = claLightsteelblue
+        Appearance.FocusedLayout.Font.Color = claWhite
+        Appearance.FocusedLayout.Font.Name = 'Segoe UI'
+        Appearance.FixedSelectedLayout.Fill.Color = claLightsteelblue
+        Appearance.FixedSelectedLayout.Font.Name = 'Segoe UI'
+        Appearance.BandLayout.Fill.Color = claLightyellow
+        Appearance.BandLayout.Font.Name = 'Segoe UI'
+        Appearance.ProgressLayout.Format = '%.0f%%'
+        LeftCol = 1
+        ScrollMode = scmItemScrolling
+      end
+      object Button1: TButton
+        Anchors = [akRight, akBottom]
+        Position.X = 184.000000000000000000
+        Position.Y = 348.000000000000000000
+        Size.Width = 122.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Load Preset Data'
+        OnClick = Button1Click
+      end
+    end
+    object TMSFNCVariableRadiusPieChart1: TTMSFNCVariableRadiusPieChart
+      Appearance.ColorList = <
+        item
+          Color = xFF57C0F5
+        end
+        item
+          Color = xFFF71F56
+        end
+        item
+          Color = xFF031B79
+        end
+        item
+          Color = xFF954EBB
+        end
+        item
+          Color = xFFEEC713
+        end
+        item
+          Color = xFFF36042
+        end
+        item
+          Color = xFF2773FC
+        end
+        item
+          Color = xFFA1CF58
+        end
+        item
+          Color = xFF00A9A6
+        end
+        item
+          Color = xFF85E4F9
+        end>
+      Appearance.GlobalFont.Color = claNull
+      Appearance.GlobalFont.Scale = 1.000000000000000000
+      Appearance.GlobalFont.Style = []
+      Appearance.ColorScheme = ccsColorList
+      Appearance.MonochromeColor = claSteelblue
+      ClickMargin = 10.000000000000000000
+      Legend.Fill.Color = claGhostwhite
+      Legend.Stroke.Color = claGray
+      Legend.Visible = False
+      Legend.Font.Name = 'Segoe UI'
+      Legend.Left = 10.000000000000000000
+      Legend.Top = 10.000000000000000000
+      Stroke.Color = claGray
+      SeriesMargins.Left = 0
+      SeriesMargins.Top = 0
+      SeriesMargins.Right = 0
+      SeriesMargins.Bottom = 0
+      Series = <
+        item
+          AnimationFactor = 4.000000000000000000
+          AutoYRange = arCommonZeroBased
+          Bar.Width = 65.000000000000000000
+          Bar.Spacing = 20.000000000000000000
+          MultiPoint.Width = 65.000000000000000000
+          Pie.Size = 200.000000000000000000
+          Pie.Margins.Left = 10
+          Pie.Margins.Top = 10
+          Pie.Margins.Right = 10
+          Pie.Margins.Bottom = 10
+          Pie.SweepAngle = 360.000000000000000000
+          Fill.Color = xFF57C0F5
+          LegendText = 'Series 0'
+          Labels.Fill.Color = claGhostwhite
+          Labels.Font.Name = 'Segoe UI'
+          Labels.Format = '%.2f'
+          Labels.OffsetY = -10.000000000000000000
+          Labels.Stroke.Color = claGray
+          Markers.Fill.Color = xFF57C0F5
+          Markers.Height = 10.000000000000000000
+          Markers.Stroke.Color = xFF2C607A
+          Markers.Width = 10.000000000000000000
+          MaxX = 10.000000000000000000
+          MaxY = 10.000000000000000000
+          MaxYOffsetPercentage = 10.000000000000000000
+          Offset3DX = 15.000000000000000000
+          Offset3DY = 15.000000000000000000
+          Points = <
+            item
+              Annotations = <>
+              Color = xFF57C0F5
+              YValue = 45.000000000000000000
+              YValueSecond = 32.000000000000000000
+              YValueVariable = 45.000000000000000000
+              YValueLow = 20.000000000000000000
+              YValueClose = 34.000000000000000000
+              YValueHigh = 45.000000000000000000
+              YValueOpen = 30.000000000000000000
+              YValueMedian = 48.000000000000000000
+            end
+            item
+              Annotations = <>
+              Color = xFFF71F56
+              XValue = 1.000000000000000000
+              YValue = 38.000000000000000000
+              YValueSecond = 25.000000000000000000
+              YValueVariable = 38.000000000000000000
+              YValueLow = 10.000000000000000000
+              YValueClose = 26.000000000000000000
+              YValueHigh = 38.000000000000000000
+              YValueOpen = 14.000000000000000000
+              YValueMedian = 38.000000000000000000
+            end
+            item
+              Annotations = <>
+              Color = xFF031B79
+              XValue = 2.000000000000000000
+              YValue = 98.000000000000000000
+              YValueSecond = 80.000000000000000000
+              YValueVariable = 98.000000000000000000
+              YValueLow = 58.000000000000000000
+              YValueClose = 65.000000000000000000
+              YValueHigh = 98.000000000000000000
+              YValueOpen = 91.000000000000000000
+              YValueMedian = 98.000000000000000000
+            end
+            item
+              Annotations = <>
+              Color = xFF954EBB
+              XValue = 3.000000000000000000
+              YValue = 80.000000000000000000
+              YValueSecond = 67.000000000000000000
+              YValueVariable = 80.000000000000000000
+              YValueLow = 42.000000000000000000
+              YValueClose = 48.000000000000000000
+              YValueHigh = 80.000000000000000000
+              YValueOpen = 55.000000000000000000
+              YValueMedian = 82.000000000000000000
+            end
+            item
+              Annotations = <>
+              Color = xFFEEC713
+              XValue = 4.000000000000000000
+              YValue = 22.000000000000000000
+              YValueSecond = 8.000000000000000000
+              YValueVariable = 22.000000000000000000
+              YValueLow = 5.000000000000000000
+              YValueClose = 11.000000000000000000
+              YValueHigh = 22.000000000000000000
+              YValueOpen = 9.000000000000000000
+              YValueMedian = 21.000000000000000000
+            end
+            item
+              Annotations = <>
+              Color = xFFF36042
+              XValue = 5.000000000000000000
+              YValue = 20.000000000000000000
+              YValueSecond = 4.000000000000000000
+              YValueVariable = 20.000000000000000000
+              YValueLow = 4.000000000000000000
+              YValueClose = 17.000000000000000000
+              YValueHigh = 20.000000000000000000
+              YValueOpen = 13.000000000000000000
+              YValueMedian = 15.000000000000000000
+            end>
+          Legend.Fill.Color = claGhostwhite
+          Legend.Font.Name = 'Segoe UI'
+          Legend.Left = -10.000000000000000000
+          Legend.Stroke.Color = claGray
+          Legend.Visible = True
+          Stroke.Color = x7FFFFFFF
+          XGrid.Visible = True
+          XValues.MajorUnit = 1.000000000000000000
+          XValues.MajorUnitFont.Name = 'Segoe UI'
+          XValues.MajorUnitFormat = '%.0f'
+          XValues.MajorUnitSpacing = 5.000000000000000000
+          XValues.MajorUnitTickMarkSize = 10.000000000000000000
+          XValues.MajorUnitTickMarkColor = claSilver
+          XValues.MinorUnitFont.Name = 'Segoe UI'
+          XValues.MinorUnitFormat = '%.0f'
+          XValues.MinorUnitSpacing = 5.000000000000000000
+          XValues.MinorUnitTickMarkSize = 7.000000000000000000
+          XValues.MinorUnitTickMarkColor = claSilver
+          XValues.Title.Font.Name = 'Segoe UI'
+          XValues.Title.TextMargins.Left = 0
+          XValues.Title.TextMargins.Top = 0
+          XValues.Title.TextMargins.Right = 0
+          XValues.Title.TextMargins.Bottom = 0
+          XValues.Title.Text = 'X-Axis Series 1'
+          YGrid.Visible = True
+          YValues.MajorUnit = 1.000000000000000000
+          YValues.MajorUnitFont.Name = 'Segoe UI'
+          YValues.MajorUnitFormat = '%.2f'
+          YValues.MajorUnitSpacing = 5.000000000000000000
+          YValues.MajorUnitTickMarkSize = 10.000000000000000000
+          YValues.MajorUnitTickMarkColor = claSilver
+          YValues.MinorUnitFont.Name = 'Segoe UI'
+          YValues.MinorUnitFormat = '%.2f'
+          YValues.MinorUnitSpacing = 5.000000000000000000
+          YValues.MinorUnitTickMarkSize = 7.000000000000000000
+          YValues.MinorUnitTickMarkColor = claSilver
+          YValues.Title.Font.Name = 'Segoe UI'
+          YValues.Title.TextMargins.Left = 0
+          YValues.Title.TextMargins.Top = 0
+          YValues.Title.TextMargins.Right = 0
+          YValues.Title.TextMargins.Bottom = 0
+          YValues.Title.Text = 'Y-Axis Series 1'
+        end>
+      Title.Fill.Kind = gfkNone
+      Title.Fill.Color = claGhostwhite
+      Title.Stroke.Color = claGray
+      Title.Font.Name = 'Segoe UI'
+      Title.Height = 35.000000000000000000
+      Title.TextMargins.Left = 3
+      Title.TextMargins.Top = 3
+      Title.TextMargins.Right = 3
+      Title.TextMargins.Bottom = 3
+      Title.Text = 'TMS FNC Chart'
+      XAxis.Fill.Kind = gfkNone
+      XAxis.Fill.Color = claGhostwhite
+      XAxis.Stroke.Color = claGray
+      XAxis.Height = 35.000000000000000000
+      YAxis.Fill.Kind = gfkNone
+      YAxis.Fill.Color = claGhostwhite
+      YAxis.Stroke.Color = claGray
+      YAxis.Width = 35.000000000000000000
+      DefaultLoadOptions.XValuesFormatString = '%.0f'
+      DefaultLoadOptions.YValuesFormatString = '%.2f'
+      DefaultLoadOptions.MaxYOffsetPercentage = 5.000000000000000000
+      Align = Client
+      Size.Width = 544.000000000000000000
+      Size.Height = 388.000000000000000000
+      Size.PlatformDefault = False
+      ClipChildren = True
+      DisableFocusEffect = False
+      TabOrder = 1
+    end
+  end
+end
